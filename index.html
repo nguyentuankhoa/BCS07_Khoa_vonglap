@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- b1  -->
     <div class="container" style="margin-bottom: 300px;">
         <h3>bài tập 1: tìm số nguyên dương nhỏ nhất sao cho: 1+2+...>10000</h3>
         <div class="form-group">
@@ -21,24 +22,25 @@
             <input class="form-control w-25 mb-2" id="nhapSo1" >
             <button class="btn btn-success " id="btnTinhTong" onclick="timSoNguyenDuongNhoNhat()">Tính Tổng</button>
         </div >
-        <div class="alert alert-danger" id="ketQua1">
-            142
+        <div class="alert alert-danger" id="ketQua1"></div>          
     </div>
 
-
+    <!-- b2  -->
     <div class="container" style="margin-bottom: 300px;">
         <h3> bài tập 2:hãy giải bài tập vòng lặp: viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + ...x^n ( xử dụng vòng lặp và hàm) </h3>
-        <div class="form-group">
-            <p>Nhập vào số</p>
-            <input class="form-control w-25 mb-2" id="nhapSo1" >
-            <input class="form-control w-25 mb-2" id="nhapSo1" >
-            <button class="btn btn-success " id="btnTinhTong" onclick="timSoNguyenDuongNhoNhat()">Tính Tổng</button>
-        </div >
-        <div class="alert alert-danger" id="ketQua1">
-            142
+        <p>Nhập vào số</p>
+        <div class="form-group">          
+            <input class="form-control w-25 mb-2" id="nhapSoX" >           
+        </div>
+        <div class="form-group">          
+            <input class="form-control w-25 mb-2" id="nhapSoN" >           
+        </div>
+        <button class="btn btn-success " id="btnTinhTong2" onclick="cauHai()">Tính Kết Quả</button>
+        <div class="alert alert-danger" id="ketQuaHai"></div>
+            
     </div>
 
-
+    <!-- b3  -->
     <div class="container" style="margin-bottom: 300px;">       
         <h3>Bài tập 3: Nhập vào n. Tính giai thừa 1*2*...n</h3>
         <div class="form-group">
@@ -51,29 +53,44 @@
         </div>
     </div>
 
+    <!-- b4  -->
     <div class="container" style="margin-bottom: 300px;">       
         <h3> bài tập 4 :Viết chương trình khi click vào button tạo ra 10 thẻ div. div chẵn bg đỏ và lẻ bg xanh</h3>
         <div class="form-group">
-            <button class="btn btn-success " id="btnTinhGiaiThua"></button>
+            <button class="btn btn-success " id="btnCau4" onclick="bai4()">Kết quả </button>
         </div>
-        <div class="alert alert-danger" id="ketQua3">
-            
+        <div class="alert alert-danger" id="ketQua4">
+            <div class="div">div 1</div>
+            <div class="div">div 2</div>
+            <div class="div">div 3</div>
+            <div class="div">div 4</div>
+            <div class="div">div 5</div>
+            <div class="div">div 6</div>
+            <div class="div">div 7</div>
+            <div class="div">div 8</div>
+            <div class="div">div 9</div>
+            <div class="div">div 10</div>        
         </div>
     </div>
 
-
-
+    <!-- b5  -->
     <div class="container" style="margin-bottom: 300px;">       
-        <h3> Bài tập 5:viết chương trình có 1 ô input, 1 ô button</h3>
+        <h3> bài tập 5: bài tập Viết chương trình có một ô input, một button. Khi click vào button thì in ra các số nguyên tố từ 1 tới giá
+            trị của ô input </h3>
         <div class="form-group">
-            <button class="btn btn-success " id="btnTinhGiaiThua"></button>
+            <input class="form-control w-25 mb-2" id="nhapSo5" type="text">
         </div>
-        <div class="alert alert-danger" id="ketQua3">
+        
+        <button class="btn btn-success " id="btnCau5" onclick="bai5()">Kết Quả</button>
+        <div class="alert alert-danger" id="ketQua5">
             
         </div>
     </div>
 
 
+
+
+        
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
