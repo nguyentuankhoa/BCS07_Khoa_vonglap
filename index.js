@@ -13,22 +13,21 @@ function timSoNguyenDuongNhoNhat () {
     document.getElementById("ketQua1").innerHTML = ketQua;
 }
 
-
+// bài tập 2:hãy giải bài tập vòng lặp: viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 + x^3 + ...x^n ( xử dụng vòng lặp và hàm)
 
 function cauHai () {
 
-    var soX = document.getElementById("nhapSoX").vale *1;
+    var soX = document.getElementById("nhapSoX").value * 1;
     var soN = document.getElementById("nhapSoN").value * 1;
 
     // các bước xử lý :
-    var tinhMu = 1
     var tinhTong = 0;
 
-    for(var i=1;i <= n;i++) {
-        tinhMu = tinhMu * n; 
-        tinhTong += tinhMu;
+    for(var i=1;i <= soN;i++) {
+       
+        tinhTong += Math.pow(soX,i);
     }
-    console.log(tinhMu);
+
     console.log(tinhTong);
     document.getElementById("ketQuaHai").innerHTML = tinhTong;
 }
